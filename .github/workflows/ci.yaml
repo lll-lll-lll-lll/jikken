@@ -2,8 +2,6 @@ name: Sleep on Push
 
 on:
   push:
-    branches:
-      - main # 対象のブランチを指定（必要に応じて変更）
 
 jobs:
   sleep-job:
