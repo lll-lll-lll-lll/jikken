@@ -1,0 +1,22 @@
+name: Sleep on Push
+
+on:
+  push:
+    branches:
+      - main # 対象のブランチを指定（必要に応じて変更）
+
+jobs:
+  sleep-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. 30秒スリープ
+      - name: Sleep for 30 seconds
+        run: |
+          echo "Sleeping for 30 seconds..."
+          sleep 30
+          echo "Done sleeping!"
