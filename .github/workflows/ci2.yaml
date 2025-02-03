@@ -1,0 +1,20 @@
+name: Sleep on Push
+
+on:
+  push:
+
+jobs:
+  sleep-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. 30秒スリープ
+      - name: Sleep for 20 seconds
+        run: |
+          echo "Sleeping for 30 seconds..."
+          sleep 30
+          echo "Done sleeping!"
