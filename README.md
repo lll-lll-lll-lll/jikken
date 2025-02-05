@@ -1,6 +1,6 @@
 # jikken
 fsf1:
-fso
+fsofds
 dsfjl
 fsdfsd
 dsfd1:fs
